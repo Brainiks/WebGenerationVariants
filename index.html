@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор случайных чисел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Генератор случайных чисел</h1>
+        <p class="description">Для случайного распределения тем для учёбы</p>
+        
+        <div class="input-group">
+            <label for="range">Количество вариантов (от 1 до n):</label>
+            <input type="number" id="range" min="1" value="30" placeholder="Введите максимальное число">
+        </div>
+        
+        <div class="input-group">
+            <label for="count">Сколько чисел выбрать:</label>
+            <input type="number" id="count" min="1" value="5" placeholder="Введите количество">
+        </div>
+        
+        <button onclick="generateNumbers()" class="generate-btn">🎲 Сгенерировать</button>
+        
+        <div id="result" class="result">
+            <h2>Результат:</h2>
+            <div id="numbers" class="numbers"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
